@@ -10,6 +10,7 @@ db.sequelize.sync();
 
 // ROUTES
 const authRoutes = require('./apps/auth/routes');
+const serviceRoutes = require('./apps/services/routes');
 
 var app = express();
 
@@ -24,6 +25,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/auth', authRoutes);
+app.use('/service', serviceRoutes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
