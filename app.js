@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 // connect db
 const db = require('./models/index');
-db.sequelize.sync();
+db.sequelize.sync({ force: true });
 
 // ROUTES
 const authRoutes = require('./apps/auth/routes');

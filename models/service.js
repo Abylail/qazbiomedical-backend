@@ -1,14 +1,14 @@
 module.exports = (sequelize, Sequelize) => sequelize.define("service", {
     title: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
     },
     description: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
     },
     content: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
     },
     image: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
     }
 })
