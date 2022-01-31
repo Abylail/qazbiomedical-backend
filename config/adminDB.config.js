@@ -1,10 +1,10 @@
 module.exports = {
     HOST: "localhost",
     PORT: 3306,
-    DB_NAME: "p-326169_admin",
-    USER: "p-326169_admin",
+    DB_NAME: "p-326169_first",
+    USER: "p-326169_first",
     PASSWORD: "xojb_GBiOCb2",
-    DIALECT: "mariadb",
+    DIALECT: "mysql",
     pool: {
       max: 5,
       min: 0,
