@@ -5,6 +5,7 @@ const sequelize = new Sequelize(dbConfig.DB_NAME, dbConfig.USER, dbConfig.PASSWO
     host: dbConfig.HOST,
     port: dbConfig.PORT,
     dialect: dbConfig.DIALECT,
+    pool: dbConfig.pool
 });
 
 const db = {};

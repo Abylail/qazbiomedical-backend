@@ -5,4 +5,10 @@ module.exports = {
     USER: "p-326169_admin",
     PASSWORD: "xojb_GBiOCb2",
     DIALECT: "mysql",
+    pool: {
+      max: 5,
+      min: 0,
+      acquire: 30000,
+      idle: 10000
+    }
 };
