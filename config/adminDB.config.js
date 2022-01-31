@@ -1,5 +1,5 @@
 module.exports = {
-    HOST: "api.qazbm.kz",
+    HOST: "localhost",
     DB_NAME: "p-326169_admin",
     USER: "p-326169_admin",
     PASSWORD: "xojb_GBiOCb2",

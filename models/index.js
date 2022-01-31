@@ -2,7 +2,7 @@ const dbConfig = require("../config/adminDB.config");
 const Sequelize = require("sequelize");
 
 const sequelize = new Sequelize(dbConfig.DB_NAME, dbConfig.USER, dbConfig.PASSWORD, {
-    host: dbConfig.HOST + dbConfig.PORT,
+    host: `${dbConfig.HOST}:${dbConfig.PORT}`,
     dialect: dbConfig.DIALECT,
     operatorsAliases: false,
 });

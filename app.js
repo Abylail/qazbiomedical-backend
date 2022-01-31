@@ -4,6 +4,11 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+// connect db
+const db = require('./models/index');
+db.sequelize.sync();
+
+// ROUTES
 const authRoutes = require('./apps/auth/routes');
 
 var app = express();
